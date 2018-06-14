@@ -1,0 +1,51 @@
+<!Doctype html>
+
+<Head>
+	<meta charset="utf-8">
+	<title> Suivi de compte</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+</Head>
+<body id="body_theme">
+
+<header id="header">
+	<div class="row">
+	<div id="home" class="col-xs-offset-1 col-xs-1"><a href="index.html"></a></div>
+	<p id="themes" class="col-xs-7">Dépenses courantes</p>
+	<div id="retour" class="col-xs-offset-1 col-xs-1"><a href="parametres_accueil.html"></a></div>
+</div>
+</header>
+
+
+<section class="row">
+	<div class="col-xs-12">
+        <br/>
+	<div id=tableauDepenses>
+		<div class="row">
+		<label for="checkbox" class="checkbox_primary col-xs-1"><input type="checkbox" class="checkbox_primary" checked="checked"></label>
+		<div id="date" class="col-xs-1"></div>
+		<div id="description" class="col-xs-6"></div>
+		<div id="montant" class="col-xs-2"></div>
+		<button id="logo_moins"></button>
+		</div>
+	</div>
+	</div>
+	<div id="dessous-tableau">
+	<button id="logo_plus" class="col-xs-offset-10 col-xs-2 col-md-offset-10 col-sm-2"><a href="popUp_Ajout_Depense.html"></a></button>
+	</div>
+</section>
+    
+
+<script src="../js/cours.js"></script>
+<script src="jquery.js"></script>
+
+
+
+<footer class="row"> 
+<div class="col-sx-12" id="footer">
+</div>	
+</footer>
+
+
+</body>
+</html>
