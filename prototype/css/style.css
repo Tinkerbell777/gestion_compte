@@ -16,7 +16,8 @@ body {
 }
 .sectionPP {
 	padding-top: 150px;
-	margin-left: 40px;
+	margin-left: 20px;
+    margin-right: 20px;
 	min-height: 200px;
 	max-height: 1300px;
 }
@@ -40,6 +41,8 @@ h4,
 h5,
 h6 {
 	color: #333333;
+    text-align: center;
+    padding-bottom: 7px;
 }
 h1 {
 	font-size: 38px;
@@ -94,6 +97,7 @@ img {
 }
 
 
+
 /*/ style="position: absolute; margin: 0px; padding: 0px; border: none; width: 685px; height: 1272.14px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -387.571px;"
 /*/
 .list-unstyled li {
@@ -139,6 +143,10 @@ blockquote {
     z-index: 4;
 }
 
+.titreHeader {
+    text-align: center;
+    color: #ffffff;
+}
 .banner1 {
 	width: 100%;
 	height: 100%;
@@ -288,6 +296,79 @@ formulaire {
 	padding-bottom: 0;
 }
 
+/* accueil
+----------------------------------------------------------------------------- */
+#bienvenue {
+    color: white;   
+    text-align: center;
+}
+
+#logoBienvenu {
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cadre {
+    border: 2px solid #ffcc33;
+    background-color: rgba(51, 153, 153, 0.85);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    min-width: 270px;
+    min-height: 250px;
+    max-width: 500px;
+    max-height: 800px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.checkbox_second {
+    margin-left: 20px;
+}
+
+.identifiant, .mdp, .checkbox_second, .btn-Id,  {
+    margin: 20px;
+    }
+
+.montant, .emetteur {
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.btn-Id {
+    position: relative;
+    left: 120px;
+    font-size: 20px;
+    background-color: #ffcc33;
+    border-radius: 10px;
+}
+
+.btn-IdE {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    font-size: 20px;
+    background-color: #ffcc33;
+    border-radius: 10px;
+}
+
+.btn-Sup {
+    font-size: 20px;
+    background-color: #ffcc33;
+    border-radius: 7px;
+    color: white;
+    position: relative; 
+    left: 75px;
+    bottom: 10px;
+    margin-top: 20px;
+    
+}
 
 
 /* tableau
@@ -296,22 +377,65 @@ formulaire {
 	margin-top: 20px;
 }
 
-#NomBanque {
+#NomBanqueActive {
     background-color: rgba(51,102,102,0.55);
-    border-radius:15px;
-    width: 15%;
+    border-top-left-radius :15px;
+    border-top-right-radius: 15px;
+    height: 100px;
    	padding: 20px;
+    padding-bottom: 40px;
    	z-index: 1;
+    position: relative;
+    bottom: -35px;
+}
+
+#NomBanque {
+    background-color: rgba(255 ,255,255,0.75);
+    border-top-left-radius :15px;
+    border-top-right-radius: 15px;
+   	padding: 20px;
+    padding-bottom: 40px;
+   	z-index: 2;
+    position: relative;
+    bottom: -40px;
 
 }
 
-#NomBanque:active {
-	 background-color: rgba(0,91,127,0.55);
+#NomBanqueActive2 {
+    background-color: rgba(255,204,51,1);
+    border-top-left-radius :15px;
+    border-top-right-radius: 15px;
+    height: 100px;
+   	padding: 20px;
+    padding-bottom: 40px;
+   	z-index: 1;
+    position: relative;
+    bottom: -35px;
+}
+
+#NomBanque2 {
+    background-color: rgba(255 ,255,255,0.75);
+    border-top-left-radius :15px;
+    border-top-right-radius: 15px;
+   	padding: 20px;
+    padding-bottom: 40px;
+   	z-index: 2;
+    position: relative;
+    bottom: -40px;
 
 }
 
-/* tableau
------------------------------------------------------------------------------ */
+
+.btnAjoutBanque {
+    position: relative;
+    top: 45px;
+    border-radius: 25px;
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    background-image: url(../images/logo_plus.png);
+}
+
 table {
     border-spacing: 8px 10px;
     border-collapse: separate;
@@ -319,7 +443,31 @@ table {
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: rgba(51,102,102,0.55);
+    background-color: rgba(51,102,102,0.55);
     border-radius: 15px;
+    overflow: auto;
+}
+
+#tableAjout {
+    border-spacing: 8px 10px;
+    border-collapse: separate;
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(255,204,51,1);
+    border-radius: 15px;
+    overflow: auto;
+}
+
+#tableEpargne {
+    border-spacing: 8px 10px;
+    border-collapse: separate;
+    align-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: rgba(255,204,51,1);
+    border-radius: 15px;
+    overflow: auto;
 }
 
 td {
@@ -359,9 +507,33 @@ td {
     background-color: transparent;
 }
 
+#dessous-tableau {
+    height: 50px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#pdf {
+    min-width: 30px;
+    height: auto;
+}
+
+#btnMAJ {
+    margin-left: 20px;
+    max-width: 100px;
+    min-width: 65px;
+}
+
+#logo_plus {
+    margin-left: 20px;
+	max-width: 100px;
+    min-width: 65px;
+}
+
+
 
 /* aside
------------------------------------------------------------------------------ */
+---------------------------------------------------- */
 aside {
     margin-top: 15px;
     text-align: center;
@@ -371,16 +543,17 @@ aside {
 #DepExept {
     background-color: rgb(255,204,51);
     margin: 0px;
-    min-height: 150px;
+    min-height: 200px;
     min-width: 150px;
     max-height:380px;
     color : white;
+    
 }
 
 #soldeB {
     background-color: rgb(51,153,153);
     margin: 0px;
-    min-height: 150px;
+    min-height: 200px;
     min-width: 150px;
     max-height:380px;
     color : white;
@@ -393,15 +566,10 @@ aside {
     background-color:white;
 }
 
-#btnMAJ {
-    max-width: 100px;
-    min-width: 65px;
+.carreGauche {
+ border: 2px solid #ffcc33; 
 }
 
-#logo_plus {
-	max-width: 100px;
-    min-width: 65px;
-}
 
 /* A Propos
 ------------------------------------------------------------------------------*/
@@ -436,7 +604,6 @@ aside {
 	line-height: 1.42857143;
 	min-width: 160px;
 	text-align: center;
-	border-radius: 0;
 	text-transform: uppercase;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
@@ -729,10 +896,104 @@ textarea {
 	font-size: 12px;
 }
 
-/* Testimonials
+/* Pop-Ups
 ---------------------------------- */
-.testimonial .media-left {
-	width: 60px;
+.PopUp {
+	width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    border: 5px solid #ffcc33;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-image: url(../images/bannerThree.png);
+    background-position: center;
+    opacity: 0,5;
+    z-index: 10;
+}
+
+
+
+#cadrePopUp {
+    border: 1px solid #ffcc33;
+    background-color: rgba(255, 255, 255, 0.75);
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 390px;
+    height: 250px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: black;
+    z-index: 5;
+}
+
+#cadrePopUpSup {
+    border: 1px solid #ffcc33;
+    background-color: rgba(51, 153, 153, 0.75);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 350px;
+    height: 150px;
+    border-radius: 20px;
+    font-size: 20px;
+    color: white;
+    z-index: 5;
+}
+
+/* Synchronisation avec banque
+---------------------------------- */
+#CadreSynchronBanque {
+    border: 1px solid #ffcc33;
+    background-color: rgba(255, 255, 255, 0.75);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 450px;
+    height: 400px;
+    border-radius: 20px;
+    font-size: 15px;
+    color: black;
+    z-index: 5;
+}
+
+.RaisonSociale, .Url, .IdPrBanque, .MdP {
+    margin: 5px;
+    border: 1px solid #ffcc33;
+}
+
+.LbRaisonSociale, .LbUrl, .LbIdPrBanque, .LbMdP {
+    margin: 5px;
+}
+
+#elementLogoBanque {
+    border: 1px solid black;
+    border-radius: 10px;
+   
+    
+}
+.LogoBanque {
+    width: 50px;
+    height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+.NomDeBanque {
+    display: none;
+}
+
+.logo_moins {
+     width: 25px;
+    height: 25px;
+}
+
+.logoChargementMini {
+    width: 25px;
+    height: 25px;
 }
 
 /* Social Links
@@ -880,4 +1141,3 @@ textarea {
 .lead {
 margin : 20px;
 }
-

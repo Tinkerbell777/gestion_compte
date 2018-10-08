@@ -35,14 +35,11 @@
 		<link href="css/custom.css" rel="stylesheet">
 	</head>
 
-	<body class="no-trans">
-		<!-- scrollToTop -->
-		<!-- ================ -->
-		<div class="scrollToTop"><i class="icon-up-open-big"></i></div>
+	<body>
 
 <!-- header start -->
 		<!-- ================ --> 
-		<header class="header fixed clearfix navbar navbar-fixed-top">
+		<header class="header headerIndex fixed clearfix navbar navbar-fixed-top">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-3 col-md-2">
@@ -52,7 +49,7 @@
 						<div class="header-left clearfix">
 							<!-- logo -->
 							<div class="logo smooth-scroll">
-								<a href="#banner1"><img id="logo" src="images/logo2.2jaune.png" alt="logoG2C"></a>
+								<a href="index.html"><img id="logo" src="images/logo2.2jaune.png" alt="logoG2C"></a>
 							</div>
 						</div>
 						<!-- header-left end -->
@@ -66,7 +63,7 @@
 
 							<!-- main-navigation start -->
 							<!-- ================ -->
-							<div class="main-navigation animated">
+							<div class="main-navigation ">
 
 								<!-- navbar start -->
 								<!-- ================ -->
@@ -84,12 +81,17 @@
 										<!-- Collect the nav links, forms, and other content for toggling -->
 										<div class="collapse navbar-collapse scrollspy smooth-scroll" id="navbar-collapse-1">
 											<ul class="nav navbar-nav navbar-right">
-												<li class=" liAccueil"><a href="#banner">Accueil</a></li>
-												<li class="liThemes"><a href="#about">Thèmes</a></li>
-												<li class="liMaJ"><a href="#services">Mise à jour</a></li>
-												<li class="liSynchron"><a href="#portfolio">Synchronisation</a></li>
-												<li class="liEpargne"><a href="#clients">Epargne</a></li>
-												<li class="liContact"><a href="#contact">Contact</a></li>
+												<li class=" liAccueil"><a href="index.html">Accueil</a></li>
+
+												<li class="liMaJ"><a href="PageAjoutDepenses.html">Mise à jour</a></li>
+
+												<li class="liSynchron"><a href="PageSynchronBanque.html">Synchronisation</a></li>
+
+												<li class="liEpargne"><a href="PageEpargne.html">Epargne</a></li>
+
+												<li class="liContact"><a href="pageContact.html">Contact</a></li>
+
+												<li class="liBienvenue"><a href="PageBienvenu.html">Déconnexion</a></li>
 											</ul>
 										</div>
 
@@ -112,14 +114,14 @@
         
 <!-- section start -->
 		<!-- ================ -->
-<div class="ShowImage">
+<div class="ShowImageIndex">
 <div class="sectionPP">
 	<section id="choixBanque">
 		<nav class="row">
 			<div class="col-xs-12 col-md-offset-2 col-md-8">
-			<span id="NomBanque" style="height: 110%"><a href="tableauBanque1.html"></a>{{nomBanque1}}</span>
-			<span id="NomBanque"><a href="tableauBanque2.html"></a>{{nomBanque2}}</span>
-			<span id="NomBanque"><a href="tableauBanque3.html"></a>{{nomBanque3}}</span>
+			<button id="NomBanqueActive"><a href="tableauBanque1.html"></a>{{nomBanque1}}</button>
+			<button id="NomBanque"><a href="tableauBanque2.html"></a>{{nomBanque2}}</button>
+			<button id="NomBanque"><a href="tableauBanque3.html"></a>{{nomBanque3}}</button>
 			</div>
 		</nav>
 	</section>
@@ -171,13 +173,17 @@
 				</tr>
 			</table>
 		</div>
-		<div></div>
-		<div id="dessous-tableau">
-		<div id="pdf" class="col-xs-offset-1 col-xs-2 col-sm-2 col-md-2"><img src="images/logo-pdf.png"></div>	
-			<a id="btnMAJ" class="col-xs-offset-1 col-xs-2 col-md-offset-2 col-sm-2"><img src="images/logoRondUpdate.png" id="BtnUpdate"></a>
-       		<a href="popUp_Ajout_Depense.html" id="logo_plus" class="col-xs-offset-3 col-xs-1 col-md-offset-3 col-sm-2"><img src="images/logo_plus.png"></a>
-		</div>
-    </section>
+		</section>
+		
+			<div id="dessous-tableau">
+				<div class="row">
+			<div class="col-xs-offset-2 col-xs-2 col-sm-2 col-md-2"><img id="pdf" src="images/logoPdf.png"></div>	
+			<a id="btnMAJ" class="col-xs-2 col-sm-2"><img src="images/logoRondUpdate.png" id="BtnUpdate"></a>
+       		<a href="popUp_Ajout_Depense.html" id="logo_plus" class="col-xs-2 col-sm-2"><img src="images/logo_plus.png"></a>
+       		</div>
+       	</div>
+
+       
     
    
     
